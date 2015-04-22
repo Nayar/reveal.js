@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+     
+
+		<div class="reveal">
+			<img src="./img/git/git.png" height="50px" style="border:0px;box-shadow: 0 0 0"/>
+			<img src="./img/mscc/mscc-touch-icon-96x96-fg.png" height="50px"/>
+            
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<section>
+						
+						<code>
+							 $ sudo apt-get install git
+						</code>
+						<p style="margin: 35px">
+							<small>Presented by Nayar Joolfoo</small>
+						</p>
+						<aside class = "notes">
+							 Also on Windows and Mac
+							 Solo
+							 In Team
+						</aside>
+					</section>
+					<section>
+						
+						<p>What it is?</p>
+						<aside class = "notes">
+							Stupid
+							Version Control System
+							Collaboration
+						</aside>
+					</section>
+					<section>
+						
+						<p>How Different?</p>
+						<aside class = "notes">
+						  Distributed, Free
+						</aside>
+					</section>
+					<section>
+						
+						<p>For Whom?</p>
+					</section>
+					
+					<section>
+						
+						<p>Time Machine</p>
+							
+						</ol>
+						<aside class="notes">
+							- What does a time machine do?
+							- Unfortunately, you can't go in the future. 
+						</aside>
+					</section>
+
+					<section>
+						
+						<p>Collaboration Tool</p>
+						<aside class="notes">
+							- No need girlfriend. Use for time machine feature
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						
+						<h2>Getting Started</h2>
+					</section>
+					<section>
+						
+						<p>$ git config --global user.email "nayar@joolfoo.com" </p><br />
+						<p>$ git config --global user.name "Nayar Joolfoo"</p>
+					</section>
+					<section>
+						
+						<p>$ git init</p><br />
+						<p>$ git add .</p><br />
+						<p>$ git commit -m 'Initial Git adding'</p><br />
+					</section>
+					<section>
+						
+						<h2>History</h2>
+						<p>$ gitk [filename]</p><br />
+					</section>
+					<section>
+						
+						<h2>Move in history</h2>
+						<p>$ git checkout SHACHECKSUM</p><br />
+					</section>
+					<section>
+						
+						<h2>Branching</h2>
+						<p>$ git checkout -b newfeature</p><br />
+					</section>
+				</section>
+				<section>
+					<section>
+						
+						<h2>Remotes</h2>
+					</section>
+					<section>
+						
+						<p>$ git pull remote branch</p>
+						<p>$ git push remote branch</p>
+					</section>
+					<section>
+						
+						<h2>Workflows</h2>
+						<ul>
+							<li>Hierarchy</li>
+							<li>Open Source (Github)</li>
+							<li>Small Independent Teams</li>
+						</ul>
+					</section>
+					<section>
+						
+						<h2>Conflicts</h2>
+						<p>git add -a -m 'Fixed Conflict'</p>
+					</section>
+				</section>
+				<section>
+					
+					<h2>Advanced (To be continued)</h2>
+					<ul>
+						<li>Hooks</li>
+						<li>Import from SVN</li>
+						<li>Access Control List (ACL)</li>
+					</ul>
+				</section>
+				<section>
+					
+					<h2>Thank You. Questions?</h2>
+					<p>nayar@joolfoo.com</p>
+				</section>
+
+				
+
+
+			</div>
+
+		</div>
+
+		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
