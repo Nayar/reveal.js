@@ -1,0 +1,408 @@
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400   1) <!doctype html>
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200   2) <html lang="en">
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400   3) 
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200   4) 	<head>
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200   5) 		<meta charset="utf-8">
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400   6) 
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400   7) 		<title>reveal.js - The HTML Presentation Framework</title>
+9856f57d (Hakim El Hattab 2011-12-30 22:33:19 -0800   8) 
+25ad8adc (Hakim El Hattab 2012-08-08 01:14:12 -0400   9) 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+9856f57d (Hakim El Hattab 2011-12-30 22:33:19 -0800  10) 		<meta name="author" content="Hakim El Hattab">
+1013ff7b (Hakim El Hattab 2012-05-06 22:05:58 -0400  11) 
+1013ff7b (Hakim El Hattab 2012-05-06 22:05:58 -0400  12) 		<meta name="apple-mobile-web-app-capable" content="yes" />
+1013ff7b (Hakim El Hattab 2012-05-06 22:05:58 -0400  13) 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400  14) 
+252200f9 (Hakim El Hattab 2014-05-15 11:42:44 +0200  15) 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+1ca8306e (hakimel         2013-01-29 18:59:36 -0500  16) 
+3aaca471 (Hakim El Hattab 2014-04-06 10:09:25 +0200  17) 		<link rel="stylesheet" href="css/reveal.css">
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100  18) 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+25ad8adc (Hakim El Hattab 2012-08-08 01:14:12 -0400  19) 
+9dbc9e77 (Hakim El Hattab 2014-12-27 21:16:44 +0100  20) 		<!-- Code syntax highlighting -->
+f57de200 (Hakim El Hattab 2012-07-09 21:00:51 -0400  21) 		<link rel="stylesheet" href="lib/css/zenburn.css">
+9a657e26 (hakimel         2012-08-03 21:49:29 -0400  22) 
+9dbc9e77 (Hakim El Hattab 2014-12-27 21:16:44 +0100  23) 		<!-- Printing and PDF exports -->
+f350c6a5 (Hakim El Hattab 2012-08-04 15:45:13 -0400  24) 		<script>
+ae962d72 (Hakim El Hattab 2014-04-26 19:16:10 +0200  25) 			var link = document.createElement( 'link' );
+ae962d72 (Hakim El Hattab 2014-04-26 19:16:10 +0200  26) 			link.rel = 'stylesheet';
+ae962d72 (Hakim El Hattab 2014-04-26 19:16:10 +0200  27) 			link.type = 'text/css';
+ae962d72 (Hakim El Hattab 2014-04-26 19:16:10 +0200  28) 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+ae962d72 (Hakim El Hattab 2014-04-26 19:16:10 +0200  29) 			document.getElementsByTagName( 'head' )[0].appendChild( link );
+f350c6a5 (Hakim El Hattab 2012-08-04 15:45:13 -0400  30) 		</script>
+f350c6a5 (Hakim El Hattab 2012-08-04 15:45:13 -0400  31) 
+9a657e26 (hakimel         2012-08-03 21:49:29 -0400  32) 		<!--[if lt IE 9]>
+9a657e26 (hakimel         2012-08-03 21:49:29 -0400  33) 		<script src="lib/js/html5shiv.js"></script>
+9a657e26 (hakimel         2012-08-03 21:49:29 -0400  34) 		<![endif]-->
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  35) 	</head>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400  36) 
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  37) 	<body>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400  38) 
+2b38f523 (Hakim El Hattab 2012-06-03 17:30:37 -0400  39) 		<div class="reveal">
+f59e64a5 (Hakim El Hattab 2012-04-04 00:59:35 -0400  40) 
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  41) 			<!-- Any section element inside of this container is displayed as a slide -->
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  42) 			<div class="slides">
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  43) 				<section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  44) 					<h1>Reveal.js</h1>
+1f0627eb (Hakim El Hattab 2014-11-05 11:54:49 +0100  45) 					<h3>The HTML Presentation Framework</h3>
+e87d6892 (Hakim El Hattab 2012-10-28 23:55:19 -0400  46) 					<p>
+e87d6892 (Hakim El Hattab 2012-10-28 23:55:19 -0400  47) 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+e87d6892 (Hakim El Hattab 2012-10-28 23:55:19 -0400  48) 					</p>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  49) 				</section>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400  50) 
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  51) 				<section>
+0345696e (Hakim El Hattab 2014-09-28 12:27:48 +0200  52) 					<h2>Hello There</h2>
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  53) 					<p>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100  54) 						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  55) 					</p>
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  56) 				</section>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400  57) 
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  58) 				<!-- Example of nested vertical slides -->
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  59) 				<section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  60) 					<section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  61) 						<h2>Vertical Slides</h2>
+36cdaefd (Hakim El Hattab 2014-09-28 12:48:37 +0200  62) 						<p>Slides can be nested inside of each other.</p>
+36cdaefd (Hakim El Hattab 2014-09-28 12:48:37 +0200  63) 						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+36cdaefd (Hakim El Hattab 2014-09-28 12:48:37 +0200  64) 						<br>
+b25fa506 (Hakim El Hattab 2014-02-17 11:55:38 +0100  65) 						<a href="#" class="navigate-down">
+343765b7 (Hakim El Hattab 2014-04-22 15:41:08 +0200  66) 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  67) 						</a>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  68) 					</section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  69) 					<section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  70) 						<h2>Basement Level 1</h2>
+36cdaefd (Hakim El Hattab 2014-09-28 12:48:37 +0200  71) 						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  72) 					</section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  73) 					<section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  74) 						<h2>Basement Level 2</h2>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  75) 						<p>That's it, time to go back up.</p>
+36cdaefd (Hakim El Hattab 2014-09-28 12:48:37 +0200  76) 						<br>
+b25fa506 (Hakim El Hattab 2014-02-17 11:55:38 +0100  77) 						<a href="#/2">
+343765b7 (Hakim El Hattab 2014-04-22 15:41:08 +0200  78) 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  79) 						</a>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  80) 					</section>
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  81) 				</section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  82) 
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200  83) 				<section>
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400  84) 					<h2>Slides</h2>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  85) 					<p>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100  86) 						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800  87) 					</p>
+3fa01ab1 (Hakim El Hattab 2011-12-26 21:57:37 -0800  88) 				</section>
+3fa01ab1 (Hakim El Hattab 2011-12-26 21:57:37 -0800  89) 
+3fa01ab1 (Hakim El Hattab 2011-12-26 21:57:37 -0800  90) 				<section>
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400  91) 					<h2>Point of View</h2>
+be657e09 (Hakim El Hattab 2012-09-09 22:04:50 -0400  92) 					<p>
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400  93) 						Press <strong>ESC</strong> to enter the slide overview.
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400  94) 					</p>
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400  95) 					<p>
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400  96) 						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+be657e09 (Hakim El Hattab 2012-09-09 22:04:50 -0400  97) 					</p>
+be657e09 (Hakim El Hattab 2012-09-09 22:04:50 -0400  98) 				</section>
+be657e09 (Hakim El Hattab 2012-09-09 22:04:50 -0400  99) 
+be657e09 (Hakim El Hattab 2012-09-09 22:04:50 -0400 100) 				<section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 101) 					<h2>Touch Optimized</h2>
+43da46f0 (Hakim El Hattab 2012-06-02 17:58:09 -0400 102) 					<p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 103) 						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+43da46f0 (Hakim El Hattab 2012-06-02 17:58:09 -0400 104) 					</p>
+43da46f0 (Hakim El Hattab 2012-06-02 17:58:09 -0400 105) 				</section>
+43da46f0 (Hakim El Hattab 2012-06-02 17:58:09 -0400 106) 
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 107) 				<section data-markdown>
+25efef8c (Hakim El Hattab 2012-10-08 09:15:36 -0400 108) 					<script type="text/template">
+25efef8c (Hakim El Hattab 2012-10-08 09:15:36 -0400 109) 						## Markdown support
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400 110) 
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 111) 						Write content using inline or external Markdown.
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 112) 						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 113) 
+4d89687f (Hakim El Hattab 2013-05-04 16:07:49 -0400 114) 						```
+4d89687f (Hakim El Hattab 2013-05-04 16:07:49 -0400 115) 						<section data-markdown>
+4d89687f (Hakim El Hattab 2013-05-04 16:07:49 -0400 116) 						  ## Markdown support
+4d89687f (Hakim El Hattab 2013-05-04 16:07:49 -0400 117) 
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 118) 						  Write content using inline or external Markdown.
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 119) 						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+4d89687f (Hakim El Hattab 2013-05-04 16:07:49 -0400 120) 						</section>
+4d89687f (Hakim El Hattab 2013-05-04 16:07:49 -0400 121) 						```
+25efef8c (Hakim El Hattab 2012-10-08 09:15:36 -0400 122) 					</script>
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 123) 				</section>
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 124) 
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 125) 				<section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 126) 					<section id="fragments">
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 127) 						<h2>Fragments</h2>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 128) 						<p>Hit the next arrow...</p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 129) 						<p class="fragment">... to step through ...</p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 130) 						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 131) 
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 132) 						<aside class="notes">
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 133) 							This slide has fragments which are also stepped through in the notes window.
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 134) 						</aside>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 135) 					</section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 136) 					<section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 137) 						<h2>Fragment Styles</h2>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 138) 						<p>There's different types of fragments, like:</p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 139) 						<p class="fragment grow">grow</p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 140) 						<p class="fragment shrink">shrink</p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 141) 						<p class="fragment roll-in">roll-in</p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 142) 						<p class="fragment fade-out">fade-out</p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 143) 						<p class="fragment current-visible">current-visible</p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 144) 						<p class="fragment highlight-red">highlight-red</p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 145) 						<p class="fragment highlight-blue">highlight-blue</p>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 146) 					</section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 147) 				</section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 148) 
+87c554b7 (Hakim El Hattab 2012-10-10 09:32:57 -0400 149) 				<section id="transitions">
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 150) 					<h2>Transition Styles</h2>
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 151) 					<p>
+aa97d80d (Hakim El Hattab 2012-08-30 01:32:18 -0400 152) 						You can select from different transitions, like: <br>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400 153) 						<a href="?transition=none#/transitions">None</a> -
+a3d4afee (Hakim El Hattab 2014-04-06 11:04:58 +0200 154) 						<a href="?transition=fade#/transitions">Fade</a> -
+a3d4afee (Hakim El Hattab 2014-04-06 11:04:58 +0200 155) 						<a href="?transition=slide#/transitions">Slide</a> -
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 156) 						<a href="?transition=convex#/transitions">Convex</a> -
+a3d4afee (Hakim El Hattab 2014-04-06 11:04:58 +0200 157) 						<a href="?transition=concave#/transitions">Concave</a> -
+a3d4afee (Hakim El Hattab 2014-04-06 11:04:58 +0200 158) 						<a href="?transition=zoom#/transitions">Zoom</a>
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 159) 					</p>
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 160) 				</section>
+696346dc (Hakim El Hattab 2012-07-31 01:35:16 -0400 161) 
+a149de8d (Dan Dascalescu  2012-10-10 03:49:05 -0700 162) 				<section id="themes">
+90f343e5 (Hakim El Hattab 2012-08-30 00:59:51 -0400 163) 					<h2>Themes</h2>
+90f343e5 (Hakim El Hattab 2012-08-30 00:59:51 -0400 164) 					<p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 165) 						reveal.js comes with a few themes built in: <br>
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 166) 						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+1bc1dd12 (Hakim El Hattab 2014-12-18 17:53:08 +0100 167) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 168) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 169) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 170) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 171) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 172) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 173) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 174) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 175) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+7c03d601 (Hakim El Hattab 2014-12-18 17:45:51 +0100 176) 						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+90f343e5 (Hakim El Hattab 2012-08-30 00:59:51 -0400 177) 					</p>
+90f343e5 (Hakim El Hattab 2012-08-30 00:59:51 -0400 178) 				</section>
+90f343e5 (Hakim El Hattab 2012-08-30 00:59:51 -0400 179) 
+90f343e5 (Hakim El Hattab 2012-08-30 00:59:51 -0400 180) 				<section>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 181) 					<section data-background="#dddddd">
+ff35847f (Hakim El Hattab 2013-06-04 21:29:32 +0200 182) 						<h2>Slide Backgrounds</h2>
+f59e64a5 (Hakim El Hattab 2012-04-04 00:59:35 -0400 183) 						<p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 184) 							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+f59e64a5 (Hakim El Hattab 2012-04-04 00:59:35 -0400 185) 						</p>
+b25fa506 (Hakim El Hattab 2014-02-17 11:55:38 +0100 186) 						<a href="#" class="navigate-down">
+343765b7 (Hakim El Hattab 2014-04-22 15:41:08 +0200 187) 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+f59e64a5 (Hakim El Hattab 2012-04-04 00:59:35 -0400 188) 						</a>
+f59e64a5 (Hakim El Hattab 2012-04-04 00:59:35 -0400 189) 					</section>
+1aaec857 (Hakim El Hattab 2014-11-05 12:27:57 +0100 190) 					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+ff35847f (Hakim El Hattab 2013-06-04 21:29:32 +0200 191) 						<h2>Image Backgrounds</h2>
+ff35847f (Hakim El Hattab 2013-06-04 21:29:32 +0200 192) 						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+f59e64a5 (Hakim El Hattab 2012-04-04 00:59:35 -0400 193) 					</section>
+1aaec857 (Hakim El Hattab 2014-11-05 12:27:57 +0100 194) 					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 195) 						<h2>Tiled Backgrounds</h2>
+ff35847f (Hakim El Hattab 2013-06-04 21:29:32 +0200 196) 						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+f59e64a5 (Hakim El Hattab 2012-04-04 00:59:35 -0400 197) 					</section>
+b133468f (Hakim El Hattab 2014-12-10 20:18:11 +0100 198) 					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+b133468f (Hakim El Hattab 2014-12-10 20:18:11 +0100 199) 						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+b133468f (Hakim El Hattab 2014-12-10 20:18:11 +0100 200) 							<h2>Video Backgrounds</h2>
+3a8fc9b2 (Hakim El Hattab 2015-01-09 18:14:03 +0100 201) 							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+b133468f (Hakim El Hattab 2014-12-10 20:18:11 +0100 202) 						</div>
+b133468f (Hakim El Hattab 2014-12-10 20:18:11 +0100 203) 					</section>
+83123689 (Hakim El Hattab 2012-03-30 00:13:45 -0400 204) 				</section>
+83123689 (Hakim El Hattab 2012-03-30 00:13:45 -0400 205) 
+1aaec857 (Hakim El Hattab 2014-11-05 12:27:57 +0100 206) 				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 207) 					<h2>Background Transitions</h2>
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 208) 					<p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 209) 						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 210) 					</p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 211) 					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 212) 				</section>
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 213) 
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 214) 				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+1aaec857 (Hakim El Hattab 2014-11-05 12:27:57 +0100 215) 					<h2>Background Transitions</h2>
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 216) 					<p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 217) 						You can override background transitions per-slide.
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 218) 					</p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 219) 					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 220) 				</section>
+4bc16ff5 (Hakim El Hattab 2013-06-18 08:53:15 -0400 221) 
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 222) 				<section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 223) 					<h2>Pretty Code</h2>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 224) 					<pre><code data-trim contenteditable>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 225) function linkify( selector ) {
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 226)   if( supports3DTransforms ) {
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 227) 
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 228)     var nodes = document.querySelectorAll( selector );
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 229) 
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 230)     for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 231)       var node = nodes[i];
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 232) 
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 233)       if( !node.className ) {
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 234)         node.className += ' roll';
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 235)       }
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 236)     }
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 237)   }
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 238) }
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 239) 					</code></pre>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 240) 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 241) 				</section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 242) 
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 243) 				<section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 244) 					<h2>Marvelous List</h2>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 245) 					<ul>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 246) 						<li>No order here</li>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 247) 						<li>Or here</li>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 248) 						<li>Or here</li>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 249) 						<li>Or here</li>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 250) 					</ul>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 251) 				</section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 252) 
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 253) 				<section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 254) 					<h2>Fantastic Ordered List</h2>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 255) 					<ol>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 256) 						<li>One is smaller than...</li>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 257) 						<li>Two is smaller than...</li>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 258) 						<li>Three!</li>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 259) 					</ol>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 260) 				</section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 261) 
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 262) 				<section>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 263) 					<h2>Tabular Tables</h2>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 264) 					<table>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 265) 						<thead>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 266) 							<tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 267) 								<th>Item</th>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 268) 								<th>Value</th>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 269) 								<th>Quantity</th>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 270) 							</tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 271) 						</thead>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 272) 						<tbody>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 273) 							<tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 274) 								<td>Apples</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 275) 								<td>$1</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 276) 								<td>7</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 277) 							<tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 278) 							<tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 279) 								<td>Lemonade</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 280) 								<td>$2</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 281) 								<td>18</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 282) 							<tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 283) 							<tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 284) 								<td>Bread</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 285) 								<td>$3</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 286) 								<td>2</td>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 287) 							<tr>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 288) 						</tbody>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 289) 					</table>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 290) 				</section>
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 291) 
+3126db0a (Hakim El Hattab 2014-11-05 12:54:00 +0100 292) 				<section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 293) 					<h2>Clever Quotes</h2>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 294) 					<p>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 295) 						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400 296) 						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 297) 					</p>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 298) 					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400 299) 						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+c746233f (Hakim El Hattab 2013-05-04 14:57:41 -0400 300) 						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 301) 					</blockquote>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 302) 				</section>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400 303) 
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 304) 				<section>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 305) 					<h2>Intergalactic Interconnections</h2>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 306) 					<p>
+f350c6a5 (Hakim El Hattab 2012-08-04 15:45:13 -0400 307) 						You can link between slides internally,
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 308) 						<a href="#/2/3">like this</a>.
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 309) 					</p>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 310) 				</section>
+a6453a0f (Hakim El Hattab 2011-12-04 18:07:33 -0800 311) 
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 312) 				<section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 313) 					<h2>Speaker View</h2>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 314) 					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 315) 					<p>Press the <em>S</em> key to try it out.</p>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 316) 
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 317) 					<aside class="notes">
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 318) 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 319) 					</aside>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 320) 				</section>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400 321) 
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 322) 				<section>
+e0e558ac (Hakim El Hattab 2012-08-04 16:16:23 -0400 323) 					<h2>Export to PDF</h2>
+d4bdf29c (Hakim El Hattab 2014-12-18 18:27:48 +0100 324) 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+d4bdf29c (Hakim El Hattab 2014-12-18 18:27:48 +0100 325) 					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+e0e558ac (Hakim El Hattab 2012-08-04 16:16:23 -0400 326) 				</section>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400 327) 
+e0e558ac (Hakim El Hattab 2012-08-04 16:16:23 -0400 328) 				<section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 329) 					<h2>Global State</h2>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 330) 					<p>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 331) 						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 332) 						will be added as a class to the document element when the slide is open. This lets you
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 333) 						apply broader style changes, like switching the page background.
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 334) 					</p>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 335) 				</section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 336) 
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 337) 				<section data-state="customevent">
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 338) 					<h2>State Events</h2>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 339) 					<p>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 340) 						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 341) 					</p>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 342) 					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 343) Reveal.addEventListener( 'customevent', function() {
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 344) 	console.log( '"customevent" has fired' );
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 345) } );
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 346) 					</code></pre>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 347) 				</section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 348) 
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 349) 				<section>
+f22e5f85 (Hakim El Hattab 2012-10-08 00:08:50 -0400 350) 					<h2>Take a Moment</h2>
+f22e5f85 (Hakim El Hattab 2012-10-08 00:08:50 -0400 351) 					<p>
+05403bcf (Hakim El Hattab 2014-12-10 18:18:57 +0100 352) 						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+f22e5f85 (Hakim El Hattab 2012-10-08 00:08:50 -0400 353) 					</p>
+f22e5f85 (Hakim El Hattab 2012-10-08 00:08:50 -0400 354) 				</section>
+f22e5f85 (Hakim El Hattab 2012-10-08 00:08:50 -0400 355) 
+f22e5f85 (Hakim El Hattab 2012-10-08 00:08:50 -0400 356) 				<section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 357) 					<h2>Much more</h2>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 358) 					<ul>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 359) 						<li>Right-to-left support</li>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 360) 						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 361) 						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 362) 						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 363) 						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 364) 					</ul>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 365) 				</section>
+96b26514 (Hakim El Hattab 2014-12-12 15:52:25 +0100 366) 
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 367) 				<section style="text-align: left;">
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 368) 					<h1>THE END</h1>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 369) 					<p>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 370) 						- <a href="http://slides.com">Try the online editor</a> <br>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 371) 						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+3b93c8be (Hakim El Hattab 2015-01-08 09:58:06 +0100 372) 					</p>
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 373) 				</section>
+25efef8c (Hakim El Hattab 2012-10-08 09:15:36 -0400 374) 
+daecc258 (Hakim El Hattab 2011-12-26 21:29:00 -0800 375) 			</div>
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400 376) 
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200 377) 		</div>
+be76bf3d (Hakim El Hattab 2012-03-24 12:48:16 -0400 378) 
+f57de200 (Hakim El Hattab 2012-07-09 21:00:51 -0400 379) 		<script src="lib/js/head.min.js"></script>
+3aaca471 (Hakim El Hattab 2014-04-06 10:09:25 +0200 380) 		<script src="js/reveal.js"></script>
+e7c5de23 (Hakim El Hattab 2012-07-09 20:51:04 -0400 381) 
+a6453a0f (Hakim El Hattab 2011-12-04 18:07:33 -0800 382) 		<script>
+ecb4347e (Hakim El Hattab 2012-10-20 10:57:51 -0400 383) 
+9dbc9e77 (Hakim El Hattab 2014-12-27 21:16:44 +0100 384) 			// Full list of configuration options available at:
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 385) 			// https://github.com/hakimel/reveal.js#configuration
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 386) 			Reveal.initialize({
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 387) 				controls: true,
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 388) 				progress: true,
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 389) 				history: true,
+794ad868 (Hakim El Hattab 2012-11-10 10:02:19 -0500 390) 				center: true,
+85762645 (Hakim El Hattab 2012-10-20 21:14:50 -0400 391) 
+a170ee89 (Hakim El Hattab 2014-11-05 10:38:43 +0100 392) 				transition: 'slide', // none/fade/slide/convex/concave/zoom
+825fe51d (Hakim El Hattab 2013-03-08 19:05:58 -0500 393) 
+9dbc9e77 (Hakim El Hattab 2014-12-27 21:16:44 +0100 394) 				// Optional reveal.js plugins
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 395) 				dependencies: [
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 396) 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+381da383 (Amit Kotlovski  2013-05-01 23:10:31 +0300 397) 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+e693717f (Hakim El Hattab 2012-10-28 18:09:54 -0400 398) 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+841f9d0f (Hakim El Hattab 2014-07-22 10:30:26 +0200 399) 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+e7b9e953 (Hakim El Hattab 2014-09-28 13:05:53 +0200 400) 					{ src: 'plugin/zoom-js/zoom.js', async: true },
+e7b9e953 (Hakim El Hattab 2014-09-28 13:05:53 +0200 401) 					{ src: 'plugin/notes/notes.js', async: true }
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 402) 				]
+49e8e0d2 (Hakim El Hattab 2012-08-11 20:25:55 -0400 403) 			});
+e693717f (Hakim El Hattab 2012-10-28 18:09:54 -0400 404) 
+eb002bd2 (Hakim El Hattab 2012-08-04 15:53:52 -0400 405) 		</script>
+0a440cee (Hakim El Hattab 2012-07-31 23:47:09 -0400 406) 
+^fdd6b36 (Hakim El Hattab 2011-06-07 21:10:59 +0200 407) 	</body>
+79299d00 (David Banham    2012-08-04 14:33:27 +1000 408) </html>
