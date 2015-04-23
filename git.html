@@ -152,10 +152,14 @@ $ git init
 $ git add .
 $ git commit -m 'Initial Git adding'
 ```
+```
+$ git clone https://github.com/Nayar/reveal.js
+```
                         </script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
+## Check state
 ```
 $ git status
 ```
@@ -169,15 +173,7 @@ $ gitk [filename]
 ```
                         </script>
 					</section>
-                    <section data-markdown>
-						<script type="text/template">
-                        ## Blame 
-####(pas moi sa, li sa!)
-```
-$ git blame filename
-```
-                        </script>
-					</section>
+
 					<section data-markdown>
 						<script type="text/template">
 ## Time Travel
@@ -230,10 +226,12 @@ $ git tag
 					</section>
                     <section data-markdown>
 						<script type="text/template">
-                        ## Ignore files
+## Ignore files
+                        
 ```
 $ echo 'bin/*' >> .gitignore
 ```
+Note: Do you know what is source code
                         </script>
 					</section>
 				</section>
@@ -284,6 +282,15 @@ git add -a -m 'Fixed Conflict'
 ```
                         </script>
 					</section>
+                    <section data-markdown>
+						<script type="text/template">
+                        ## Blame 
+####(pas moi sa, li sa!)
+```
+$ git blame filename
+```
+                        </script>
+					</section>
 				</section>
 				<section>
 					
@@ -291,11 +298,13 @@ git add -a -m 'Fixed Conflict'
 					<ul>
 						<li>Hooks
 						<ul>
-							<li>Unit Testing</li>
+							<li>Unit Testing e.g. PHPUnit, JUnit</li>
 							<li>Email Collaborators of commit</li>
 							<li>Deploy to your server <a href="http://nayarweb.com/blog/2013/automatic-server-deployment-with-gitssh/">(link)</a></li>
+                            <li>Compile SASS/LESS</li>
 						</ul></li>
-						<li>Import from SVN</li>
+                        <li>Git submodules</li>
+						<li>Work with SVN</li>
 					</ul>
 				</section>
 				<section data-markdown>
