@@ -163,22 +163,28 @@ $ git blame filename
 ```
                         </script>
 					</section>
-					<section>
-						
-						<h2>Move in history</h2>
-						<p>$ git checkout SHACHECKSUM</p><br />
+					<section data-markdown>
+						<script type="text/template">
+## Time Travel
+```
+$ git checkout SHACHECKSUM
+```
+					   </script>
 					</section>
-					<section>
-						
-						<h2>Branching</h2>
-						<p>$ git checkout -b newfeature</p><br />
+					<section data-markdown>
+						<script type="text/template">
+##Branching
+```
+$ git checkout -b newfeature1
+```
+					   </script>
 					</section>
                     <section data-markdown>
 						<script type="text/template">
 						## Merging
 ```
 $ git checkout master
-$ git merge newfeature
+$ git merge newfeature1
 ```
 						<aside class="notes">
 							- What does a time machine do?
@@ -196,10 +202,23 @@ $ git merge newfeature
 							- No need girlfriend. Use for time machine feature
 						</aside>
 					</section>
-					<section>
-						
-						<p>$ git pull remote branch</p>
-						<p>$ git push remote branch</p>
+					<section data-markdown>
+						<script type="text/template">
+## Remotes
+```
+$ git pull remote branch
+
+$ git pull origin master
+$ git pull tom feature1
+$ git pull harry feature6
+
+```
+```
+$ git push remote branch
+
+$ git push teamleader master
+```
+                        </script>
 					</section>
 					<section>
 						
@@ -210,10 +229,13 @@ $ git merge newfeature
 							<li>Small Independent Teams</li>
 						</ul>
 					</section>
-					<section>
-						
-						<h2>Conflicts</h2>
-						<p>git add -a -m 'Fixed Conflict'</p>
+					<section data-markdown>
+						<script type="text/template">
+                        ## Conflicts
+```						
+git add -a -m 'Fixed Conflict'
+```
+                        </script>
 					</section>
 				</section>
 				<section>
@@ -222,7 +244,7 @@ $ git merge newfeature
 					<ul>
 						<li>Hooks
 						<ul>
-							<li>Unit Testing (Demo with PHPUnit)</li>
+							<li>Unit Testing</li>
 							<li>Email Collaborators of commit</li>
 							<li>Deploy to your server</li>
 						</ul></li>
